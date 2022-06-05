@@ -14,8 +14,8 @@ buttonDestroy.addEventListener("click", destroyBoxes );
 
 function createBoxElement(size) {
   const divEl = document.createElement('div');
-    divEl.style.width = size + 'px';
-    divEl.style.height = size + 'px';
+    divEl.style.width = `${size}px`;
+    divEl.style.height = `${size}px`;
     divEl.style.backgroundColor = getRandomHexColor();
     boxes.append(divEl);
 }

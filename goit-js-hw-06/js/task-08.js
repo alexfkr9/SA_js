@@ -14,8 +14,7 @@ function onFormSubmit(event) {
                     password: formData.password.value,
                     }
 
-    console.log("Form dada: ");
-    console.log(formDataObj);
+    console.log('Form dada: ', formDataObj);    
     
     form.reset();
 }
