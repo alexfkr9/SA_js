@@ -4,8 +4,8 @@ import { galleryItems } from "./gallery-items.js";
 const gallery = document.querySelector("div.gallery");
 
 const galleryItemsEl = galleryItems
-  .map((item) => {
-    return `<div class='gallery__item'>
+  .map((item) => 
+            `<div class='gallery__item'>
                 <a class="gallery__link" href=${item.original}>
                     <img class='gallery__image' 
                         src=${item.preview} 
@@ -13,8 +13,8 @@ const galleryItemsEl = galleryItems
                         alt='${item.description}'                
                     </>
                 </a>
-            </div>`;
-  })
+            </div>`
+  )
   .join("");
 
 gallery.insertAdjacentHTML("beforeend", galleryItemsEl);
@@ -24,8 +24,10 @@ gallery.addEventListener("click", getModalImage);
 let instanceLightbox;
 
 function getModalImage(e) {
+  if (!e.target.classList.contains("gallery__image")) {
+    return;
+  }
   e.preventDefault();
-
   instanceLightbox = basicLightbox.create(`
 		<img width="1400" height="900" src="${e.target.dataset.source}">
 	`);
