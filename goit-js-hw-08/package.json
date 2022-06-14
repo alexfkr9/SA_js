@@ -2,10 +2,10 @@
   "name": "goit-js-hw-08",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://alexfkr9.github.io/SA_js/goit-js-hw-07/index.html",
+  "homepage": "https://alexfkr9.github.io/SA_js/goit-js-hw-08/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /parcel-project-template/"
+    "build": "parcel build src/index.html --public-url /SA_js/goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
