@@ -5,7 +5,7 @@
   "homepage": "https://alexfkr9.github.io/SA_js/goit-js-hw-08/dist",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /dist/"
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
