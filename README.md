@@ -1,1 +1,1 @@
-https://alexfkr9.github.io/SA_js/goit-js-hw-07/index.html
+https://alexfkr9.github.io/SA_js/goit-js-hw-08/index.html
